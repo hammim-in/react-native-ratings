@@ -1,0 +1,42 @@
+{
+  "name": "@hammim-in/react-native-ratings",
+  "version": "0.0.7",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "assets"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc && cp -R assets dist/assets",
+    "deploy": "npm run build && npm publish --access public"
+  },
+  "keywords": [
+    "react-19",
+    "react-native",
+    "react-native-ratings",
+    "ratings"
+  ],
+  "bugs": {
+    "url": "https://github.com/hammim-in/react-native-ratings/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hammim-in/react-native-ratings.git"
+  },
+  "author": "Ham Mim",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=19.0.0",
+    "react-native": ">=0.79.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.2",
+    "@types/react-native": "^0.72.8",
+    "typescript": "^5.8.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "displayName": "React Native Ratings"
+}
